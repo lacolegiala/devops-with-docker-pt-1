@@ -1,0 +1,6 @@
+You can find the source code here: https://github.com/docker-hy
+
+docker run -d --rm -it --name secretmessage devopsdockeruh/simple-web-service:ubuntu
+docker start secretmessage
+docker exec -it secretmessage /bin/bash
+tail -f ./text.log
